@@ -2,7 +2,8 @@
 var prerender = require('./lib');
 
 var server = prerender({
-    resourceDownloadTimeout: 60000
+    resourceDownloadTimeout: 60000,
+    jsTimeout: 60000
 });
 
 server.use(prerender.sendPrerenderHeader());
