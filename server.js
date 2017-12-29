@@ -2,7 +2,7 @@
 var prerender = require('./lib');
 
 var server = prerender({
-    chromeFlags: [ '--no-sandbox', '--headless', '--disable-gpu', '--remote-debugging-port=9222', '--hide-scrollbars' ],
+    chromeLocation: '/app/.apt/usr/bin/google-chrome',
     resourceDownloadTimeout: 60000,
     jsTimeout: 60000
 });
