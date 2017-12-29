@@ -12,4 +12,3 @@ server.use(prerender.removeScriptTags());
 server.use(prerender.httpHeaders());
 
 server.start();
-
